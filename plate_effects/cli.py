@@ -1,7 +1,9 @@
 """Small command-line entry point for design editing, publishing and fitting.
 
 Run ``python -m plate_effects.cli demo`` to execute the bundled synthetic
-scenarios and write JSON reports under ``results/``.
+scenarios and write JSON reports under ``results/``.  Run
+``python -m plate_effects.cli label-demo`` to build glyph fonts from synthetic
+correction runs, export them and read unseparated scan bands offline.
 """
 
 from __future__ import annotations
@@ -34,13 +36,32 @@ def demo(outdir: str = "results") -> int:
     return 0
 
 
+def label_demo(outdir: str = "results") -> int:
+    import os
+
+    from .label_scenarios import build_all_demos
+
+    os.makedirs(outdir, exist_ok=True)
+    results = build_all_demos(outdir)
+    _dump(os.path.join(outdir, "label_summary.json"), results)
+    for name in results:
+        print(f"{name}: OK")
+    return 0
+
+
 def main(argv: list[str] | None = None) -> int:
     argv = list(sys.argv[1:] if argv is None else argv)
     if not argv or argv[0] in {"-h", "--help"}:
-        print("usage: python -m plate_effects.cli demo [outdir]")
+        print(
+            "usage:\n"
+            "  python -m plate_effects.cli demo [outdir]\n"
+            "  python -m plate_effects.cli label-demo [outdir]"
+        )
         return 0
     if argv[0] == "demo":
         return demo(argv[1] if len(argv) > 1 else "results")
+    if argv[0] == "label-demo":
+        return label_demo(argv[1] if len(argv) > 1 else "results")
     print(f"unknown command {argv[0]!r}", file=sys.stderr)
     return 2
 

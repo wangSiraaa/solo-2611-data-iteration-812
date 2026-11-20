@@ -1,12 +1,15 @@
-# 多孔板布局产品与读数效应校正仓
+# 多孔板布局产品、读数效应校正与点阵字模解读仓
 
-本仓库实现两个彼此独立的组件，全部使用合成测量，不作任何医学解释：
+本仓库实现三个彼此独立的组件，全部使用合成测量，不作任何医学解释：
 
 1. **设计服务**（`plate_effects/design.py`）：管理多孔板布局、不可用孔和每样品复孔约束，
    发布带完整来源的不可变布局产品。所有编辑都是事务式的，失败整体回滚。
 2. **批次读数仓**（`plate_effects/warehouse.py`）：消费公开布局产品（可来自本服务，也可
    外部导入同格式产品），对每块板独立拟合题面给定的加性模型，并按**可识别性**输出
    校正值、`UNIDENTIFIABLE` 或 `MISSING`。
+3. **点阵字模库与标签解读器**（`plate_effects/font_builder.py`、`label_reader.py`）：
+   从合成校正 run 的整次曝光样张登记 0–9 的矩形孔阵列字模，导出自包含 JSON；解读器只依赖
+   字模文件，离线切分无分隔扫描列流并按批次校验合同返回无解、唯一串或两个歧义串。
 
 ## 模型与约束
 
@@ -43,22 +46,27 @@
 
 ```
 plate_effects/
-  rational.py    # 有理数解析、精确 RREF/秩/零空间/线性求解
-  design.py      # 事务式设计服务、布局校验、发布产品与摘要
-  warehouse.py   # 读数导入、精确最小二乘、可识别性、样品统计、解释报告、缓存
-  scenarios.py   # 6 个合成场景（已知 b/r/c）
-  cli.py         # 演示入口
+  rational.py       # 有理数解析、精确 RREF/秩/零空间/线性求解
+  design.py         # 事务式设计服务、布局校验、发布产品与摘要
+  warehouse.py      # 读数导入、精确最小二乘、可识别性、样品统计、解释报告、缓存
+  scenarios.py      # 6 个合成场景（已知 b/r/c）
+  font_builder.py   # 整次曝光样张 -> 可导出数字字模库（共享阈值、整幅来源）
+  label_reader.py   # 离线无分隔扫描带解读器（精确 DP、批次校验合同）
+  label_scenarios.py# 字模/解读器端到端演示与验收场景
+  cli.py            # 演示入口
 tests/
   test_plate_effects.py
   test_scenarios.py
+  test_label_font.py
 ```
 
 ## 运行
 
 ```bash
 python3 -m venv .venv && .venv/bin/pip install numpy pytest
-.venv/bin/python -m plate_effects.cli demo results/   # 生成 results/*.json
-.venv/bin/python -m pytest -q                         # 48 个测试
+.venv/bin/python -m plate_effects.cli demo results/        # 生成 results/*.json
+.venv/bin/python -m plate_effects.cli label-demo results/  # 字库与解读报告
+.venv/bin/python -m pytest -q                               # 84 个测试
 ```
 
 ## 场景覆盖
@@ -71,6 +79,45 @@ python3 -m venv .venv && .venv/bin/pip install numpy pytest
 | `missing_replicate` | 缺测复孔 → `MISSING` + 样品 `INCOMPLETE`（列出原因） |
 | `role_correction` | 更正参考值/孔角色生成新版本并真实重拟合；旧 run 绑定旧布局 |
 | `blocked_wells` | 不可用孔发布为 unused/blocked，拒绝测量且不出现在可用孔查询中 |
+
+## 点阵字模库与无分隔标签解读
+
+### 字模构建（`font_builder.py`）
+
+- 每个**样张**（`SampleSheet`）把一个 `height×width` 矩形孔阵列（高 ≤ 8、宽 ≤ 12）映射到
+  一个校正 run 的孔，并携带该次曝光的**闭有理数阈值区间** `[t_lo, t_hi]`。
+- 一次曝光共用一个未知阈值：格亮当且仅当校正值 `>= t`。合法字形必须来自**一张完整样张在
+  同一个阈值下**的整幅位图，不允许把两张样张的列拼起来；每个变体都带回样张、代表阈值和
+  每格源孔坐标，可重新施加阈值复现位图。
+- 位图只在阈值越过某格校正值时变化，因此枚举区间两端点与区间内全部格值即可精确得到所有
+  **不同列图形**（`Fraction` 精确运算，无容差）；同一位图在多个阈值/多张样张下只登记一次，
+  额外来源并入 `origins`。
+- 缺测或不可识别孔不会被画成暗格：整张样张作废并以原因码（`MISSING_CELL` /
+  `UNRECOGNISABLE_CELL` 等）导出；没有任何有效样张的数字出现在 `missing_digits` 且其
+  `digits` 导出为空数组。字库带 SHA-256 内容摘要，篡改后无法载入。
+
+### 解读器（`label_reader.py`）
+
+- 输入：字模文件、精确位数 `k`（≤ 80）、完整列向量扫描带（≤ 480 列，无遮盖无插列）和批次
+  合同 `LabelContract`（每位整数权重、模数 ≤ 97、允许余数集合；前导零也是字符）。
+- 切分必须从首列开始、恰好消费到末列；每个字符切片必须逐列等于该数字某个字模变体。
+- 精确动态规划，状态为 `(已消费列位置, 加权余数)`，每个状态至多保留 **2 个不同数字前缀**。
+  2 是精确上界而非尝试次数：后续可行性只取决于状态本身，第三个前缀对“无解/唯一/两个歧义”
+  永不需要；同串经多切点、多样张或多阈值到达只算一次。连续相同列不会产生组合爆炸。
+- 返回 `no_solution` / `unique` / `ambiguous`（歧义恰给两个不同串）。每个见证列出逐字符
+  列区间 `[start, end)` 与可核验的整幅图形来源（样张、阈值、源坐标）。只换合同即可用同一
+  解读器重读原带。
+
+### 验收示例（`label_scenarios.py`）
+
+| 场景 | 关键点 |
+|------|--------|
+| `canonical_one_two` | 读数 2、3 与区间 [2,4] 只产生 11/01/00，绝无 10；扫带 111 在余数 1/2/两者下分别得 12、21、歧义双见证；更正后 2 只产生 10 时原带无解 |
+| `duplicate_sheets` | 重复样张只增加来源，不增加位图，也不把同一数字串报成歧义 |
+| `threshold_representatives` | 同一位图在多个阈值下合并为一个变体 |
+| `missing_cells` / `digit_without_evidence` | 缺测格不画暗、整张作废；无有效样张的数字在导出中可见 |
+| `multirow_and_contract_swap` | 高 3 字库、前导零、逐字符区间与整幅来源；只换合同重读同一带 |
+| `large_band` | 80 位 / 480 列、模数 97，全等列长切分下保持精确且有界 |
 
 ## 缓存策略
 
