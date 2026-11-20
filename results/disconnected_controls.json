@@ -1,0 +1,1663 @@
+{
+  "name": "disconnected_controls",
+  "description": "Two disconnected control components leave a large nullspace, so b/r/c are not unique.  Wells whose bias is invariant across all minimisers (S-near) are still corrected; S-far is UNIDENTIFIABLE with a witness direction that changes its bias by exactly one.",
+  "headline": "rank 7/19, nullity 12, missing 0, complete ['S-near'], incomplete ['S-far']",
+  "truth": {
+    "b": "1/3",
+    "sample_values": {
+      "S-near": "3",
+      "S-far": "8"
+    },
+    "row_effects": {
+      "0": "-7/2",
+      "1": "-5/2",
+      "2": "-3/2",
+      "3": "-1/2",
+      "4": "1/2",
+      "5": "3/2",
+      "6": "5/2",
+      "7": "7/2"
+    },
+    "col_effects": {
+      "0": "-11/4",
+      "1": "-9/4",
+      "2": "-7/4",
+      "3": "-5/4",
+      "4": "-3/4",
+      "5": "-1/4",
+      "6": "1/4",
+      "7": "3/4",
+      "8": "5/4",
+      "9": "7/4",
+      "10": "9/4",
+      "11": "11/4"
+    }
+  },
+  "layout": {
+    "format": "plate-layout/v1",
+    "plate_id": "plate-disconnected",
+    "rows": 8,
+    "cols": 12,
+    "version": 7,
+    "digest": "627522d47262f6cf69aff59ba0b0bef14a7b52d0759fc094b7dcd965902db61d",
+    "min_replicates": 1,
+    "max_replicates": 2,
+    "sample_bounds": [],
+    "wells": [
+      {
+        "well": "A1",
+        "row": 0,
+        "col": 0,
+        "role": "blank",
+        "expected": "0",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_blank"
+      },
+      {
+        "well": "A2",
+        "row": 0,
+        "col": 1,
+        "role": "blank",
+        "expected": "0",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_blank"
+      },
+      {
+        "well": "A3",
+        "row": 0,
+        "col": 2,
+        "role": "sample",
+        "expected": null,
+        "sample_id": "S-near",
+        "blocked": false,
+        "provenance": "define_sample:S-near"
+      },
+      {
+        "well": "A4",
+        "row": 0,
+        "col": 3,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "A5",
+        "row": 0,
+        "col": 4,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "A6",
+        "row": 0,
+        "col": 5,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "A7",
+        "row": 0,
+        "col": 6,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "A8",
+        "row": 0,
+        "col": 7,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "A9",
+        "row": 0,
+        "col": 8,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "A10",
+        "row": 0,
+        "col": 9,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "A11",
+        "row": 0,
+        "col": 10,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "A12",
+        "row": 0,
+        "col": 11,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "B1",
+        "row": 1,
+        "col": 0,
+        "role": "blank",
+        "expected": "0",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_blank"
+      },
+      {
+        "well": "B2",
+        "row": 1,
+        "col": 1,
+        "role": "sample",
+        "expected": null,
+        "sample_id": "S-near",
+        "blocked": false,
+        "provenance": "define_sample:S-near"
+      },
+      {
+        "well": "B3",
+        "row": 1,
+        "col": 2,
+        "role": "reference",
+        "expected": "6",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_reference"
+      },
+      {
+        "well": "B4",
+        "row": 1,
+        "col": 3,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "B5",
+        "row": 1,
+        "col": 4,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "B6",
+        "row": 1,
+        "col": 5,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "B7",
+        "row": 1,
+        "col": 6,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "B8",
+        "row": 1,
+        "col": 7,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "B9",
+        "row": 1,
+        "col": 8,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "B10",
+        "row": 1,
+        "col": 9,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "B11",
+        "row": 1,
+        "col": 10,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "B12",
+        "row": 1,
+        "col": 11,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "C1",
+        "row": 2,
+        "col": 0,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "C2",
+        "row": 2,
+        "col": 1,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "C3",
+        "row": 2,
+        "col": 2,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "C4",
+        "row": 2,
+        "col": 3,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "C5",
+        "row": 2,
+        "col": 4,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "C6",
+        "row": 2,
+        "col": 5,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "C7",
+        "row": 2,
+        "col": 6,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "C8",
+        "row": 2,
+        "col": 7,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "C9",
+        "row": 2,
+        "col": 8,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "C10",
+        "row": 2,
+        "col": 9,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "C11",
+        "row": 2,
+        "col": 10,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "C12",
+        "row": 2,
+        "col": 11,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "D1",
+        "row": 3,
+        "col": 0,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "D2",
+        "row": 3,
+        "col": 1,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "D3",
+        "row": 3,
+        "col": 2,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "D4",
+        "row": 3,
+        "col": 3,
+        "role": "reference",
+        "expected": "6",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_reference"
+      },
+      {
+        "well": "D5",
+        "row": 3,
+        "col": 4,
+        "role": "reference",
+        "expected": "6",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_reference"
+      },
+      {
+        "well": "D6",
+        "row": 3,
+        "col": 5,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "D7",
+        "row": 3,
+        "col": 6,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "D8",
+        "row": 3,
+        "col": 7,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "D9",
+        "row": 3,
+        "col": 8,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "D10",
+        "row": 3,
+        "col": 9,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "D11",
+        "row": 3,
+        "col": 10,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "D12",
+        "row": 3,
+        "col": 11,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "E1",
+        "row": 4,
+        "col": 0,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "E2",
+        "row": 4,
+        "col": 1,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "E3",
+        "row": 4,
+        "col": 2,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "E4",
+        "row": 4,
+        "col": 3,
+        "role": "reference",
+        "expected": "6",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_reference"
+      },
+      {
+        "well": "E5",
+        "row": 4,
+        "col": 4,
+        "role": "blank",
+        "expected": "0",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_blank"
+      },
+      {
+        "well": "E6",
+        "row": 4,
+        "col": 5,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "E7",
+        "row": 4,
+        "col": 6,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "E8",
+        "row": 4,
+        "col": 7,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "E9",
+        "row": 4,
+        "col": 8,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "E10",
+        "row": 4,
+        "col": 9,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "E11",
+        "row": 4,
+        "col": 10,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "E12",
+        "row": 4,
+        "col": 11,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "F1",
+        "row": 5,
+        "col": 0,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "F2",
+        "row": 5,
+        "col": 1,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "F3",
+        "row": 5,
+        "col": 2,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "F4",
+        "row": 5,
+        "col": 3,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "F5",
+        "row": 5,
+        "col": 4,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "F6",
+        "row": 5,
+        "col": 5,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "F7",
+        "row": 5,
+        "col": 6,
+        "role": "sample",
+        "expected": null,
+        "sample_id": "S-far",
+        "blocked": false,
+        "provenance": "define_sample:S-far"
+      },
+      {
+        "well": "F8",
+        "row": 5,
+        "col": 7,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "F9",
+        "row": 5,
+        "col": 8,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "F10",
+        "row": 5,
+        "col": 9,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "F11",
+        "row": 5,
+        "col": 10,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "F12",
+        "row": 5,
+        "col": 11,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "G1",
+        "row": 6,
+        "col": 0,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "G2",
+        "row": 6,
+        "col": 1,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "G3",
+        "row": 6,
+        "col": 2,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "G4",
+        "row": 6,
+        "col": 3,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "G5",
+        "row": 6,
+        "col": 4,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "G6",
+        "row": 6,
+        "col": 5,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "G7",
+        "row": 6,
+        "col": 6,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "G8",
+        "row": 6,
+        "col": 7,
+        "role": "sample",
+        "expected": null,
+        "sample_id": "S-far",
+        "blocked": false,
+        "provenance": "define_sample:S-far"
+      },
+      {
+        "well": "G9",
+        "row": 6,
+        "col": 8,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "G10",
+        "row": 6,
+        "col": 9,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "G11",
+        "row": 6,
+        "col": 10,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "G12",
+        "row": 6,
+        "col": 11,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "H1",
+        "row": 7,
+        "col": 0,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "H2",
+        "row": 7,
+        "col": 1,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "H3",
+        "row": 7,
+        "col": 2,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "H4",
+        "row": 7,
+        "col": 3,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "H5",
+        "row": 7,
+        "col": 4,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "H6",
+        "row": 7,
+        "col": 5,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "H7",
+        "row": 7,
+        "col": 6,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "H8",
+        "row": 7,
+        "col": 7,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "H9",
+        "row": 7,
+        "col": 8,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "H10",
+        "row": 7,
+        "col": 9,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "H11",
+        "row": 7,
+        "col": 10,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      },
+      {
+        "well": "H12",
+        "row": 7,
+        "col": 11,
+        "role": "unused",
+        "expected": null,
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "unassigned"
+      }
+    ]
+  },
+  "missing_used_wells": [],
+  "report": {
+    "run_id": "disconnected-controls",
+    "plate_id": "plate-disconnected",
+    "layout_version": 7,
+    "layout_digest": "627522d47262f6cf69aff59ba0b0bef14a7b52d0759fc094b7dcd965902db61d",
+    "control_wells": [
+      "A1",
+      "A2",
+      "B1",
+      "B3",
+      "D4",
+      "D5",
+      "E4",
+      "E5"
+    ],
+    "missing_control_wells": [],
+    "observed_control_count": 8,
+    "linear_system": {
+      "rank": 7,
+      "n_parameters": 19,
+      "nullity": 12,
+      "numerical_rank_crosscheck": 7,
+      "numerical_rank_tolerance": 3.4306320545519886e-09
+    },
+    "control_residuals": {
+      "sum_of_squares": {
+        "exact": "0",
+        "float": 0.0
+      },
+      "max_abs": {
+        "exact": "0",
+        "float": 0.0
+      },
+      "per_well": {
+        "A1": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "A2": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "B1": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "B3": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "D4": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "D5": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "E4": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "E5": {
+          "exact": "0",
+          "float": 0.0
+        }
+      }
+    },
+    "parameter_unique": false,
+    "one_optimal_solution": {
+      "b": {
+        "exact": "1/12",
+        "float": 0.08333333333333333
+      },
+      "rows": {
+        "0": {
+          "exact": "-5",
+          "float": -5.0
+        },
+        "1": {
+          "exact": "-4",
+          "float": -4.0
+        },
+        "2": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "3": {
+          "exact": "-1",
+          "float": -1.0
+        },
+        "4": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "5": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "6": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "7": {
+          "exact": "10",
+          "float": 10.0
+        }
+      },
+      "cols": {
+        "0": {
+          "exact": "-1",
+          "float": -1.0
+        },
+        "1": {
+          "exact": "-1/2",
+          "float": -0.5
+        },
+        "2": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "3": {
+          "exact": "-1/2",
+          "float": -0.5
+        },
+        "4": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "5": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "6": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "7": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "8": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "9": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "10": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "11": {
+          "exact": "2",
+          "float": 2.0
+        }
+      }
+    },
+    "wells": [
+      {
+        "well": "A1",
+        "row": 0,
+        "col": 0,
+        "role": "blank",
+        "sample_id": null,
+        "expected": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "observed": {
+          "exact": "-71/12",
+          "float": -5.916666666666667
+        },
+        "bias": {
+          "exact": "-71/12",
+          "float": -5.916666666666667
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "A2",
+        "row": 0,
+        "col": 1,
+        "role": "blank",
+        "sample_id": null,
+        "expected": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "observed": {
+          "exact": "-65/12",
+          "float": -5.416666666666667
+        },
+        "bias": {
+          "exact": "-65/12",
+          "float": -5.416666666666667
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "A3",
+        "row": 0,
+        "col": 2,
+        "role": "sample",
+        "sample_id": "S-near",
+        "expected": null,
+        "observed": {
+          "exact": "-23/12",
+          "float": -1.9166666666666667
+        },
+        "bias": {
+          "exact": "-59/12",
+          "float": -4.916666666666667
+        },
+        "bias_identifiable": true,
+        "corrected": {
+          "exact": "3",
+          "float": 3.0
+        },
+        "residual": null,
+        "status": "CORRECTED",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "B1",
+        "row": 1,
+        "col": 0,
+        "role": "blank",
+        "sample_id": null,
+        "expected": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "observed": {
+          "exact": "-59/12",
+          "float": -4.916666666666667
+        },
+        "bias": {
+          "exact": "-59/12",
+          "float": -4.916666666666667
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "B2",
+        "row": 1,
+        "col": 1,
+        "role": "sample",
+        "sample_id": "S-near",
+        "expected": null,
+        "observed": {
+          "exact": "-17/12",
+          "float": -1.4166666666666667
+        },
+        "bias": {
+          "exact": "-53/12",
+          "float": -4.416666666666667
+        },
+        "bias_identifiable": true,
+        "corrected": {
+          "exact": "3",
+          "float": 3.0
+        },
+        "residual": null,
+        "status": "CORRECTED",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "B3",
+        "row": 1,
+        "col": 2,
+        "role": "reference",
+        "sample_id": null,
+        "expected": {
+          "exact": "6",
+          "float": 6.0
+        },
+        "observed": {
+          "exact": "25/12",
+          "float": 2.0833333333333335
+        },
+        "bias": {
+          "exact": "-47/12",
+          "float": -3.9166666666666665
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "D4",
+        "row": 3,
+        "col": 3,
+        "role": "reference",
+        "sample_id": null,
+        "expected": {
+          "exact": "6",
+          "float": 6.0
+        },
+        "observed": {
+          "exact": "55/12",
+          "float": 4.583333333333333
+        },
+        "bias": {
+          "exact": "-17/12",
+          "float": -1.4166666666666667
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "D5",
+        "row": 3,
+        "col": 4,
+        "role": "reference",
+        "sample_id": null,
+        "expected": {
+          "exact": "6",
+          "float": 6.0
+        },
+        "observed": {
+          "exact": "61/12",
+          "float": 5.083333333333333
+        },
+        "bias": {
+          "exact": "-11/12",
+          "float": -0.9166666666666666
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "E4",
+        "row": 4,
+        "col": 3,
+        "role": "reference",
+        "sample_id": null,
+        "expected": {
+          "exact": "6",
+          "float": 6.0
+        },
+        "observed": {
+          "exact": "67/12",
+          "float": 5.583333333333333
+        },
+        "bias": {
+          "exact": "-5/12",
+          "float": -0.4166666666666667
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "E5",
+        "row": 4,
+        "col": 4,
+        "role": "blank",
+        "sample_id": null,
+        "expected": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "observed": {
+          "exact": "1/12",
+          "float": 0.08333333333333333
+        },
+        "bias": {
+          "exact": "1/12",
+          "float": 0.08333333333333333
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "F7",
+        "row": 5,
+        "col": 6,
+        "role": "sample",
+        "sample_id": "S-far",
+        "expected": null,
+        "observed": {
+          "exact": "121/12",
+          "float": 10.083333333333334
+        },
+        "bias": {
+          "exact": "1/12",
+          "float": 0.08333333333333333
+        },
+        "bias_identifiable": false,
+        "corrected": null,
+        "residual": null,
+        "status": "UNIDENTIFIABLE",
+        "unidentifiability_proof": {
+          "direction_index": 1,
+          "bias_delta": "1",
+          "delta_b": "1",
+          "delta_rows": {
+            "0": "-1",
+            "1": "-1",
+            "2": "0",
+            "3": "-1",
+            "4": "-1",
+            "5": "0",
+            "6": "0",
+            "7": "4"
+          },
+          "delta_cols": {
+            "0": "0",
+            "1": "0",
+            "2": "0",
+            "3": "0",
+            "4": "0",
+            "5": "0",
+            "6": "0",
+            "7": "0",
+            "8": "0",
+            "9": "0",
+            "10": "0",
+            "11": "0"
+          },
+          "statement": "adding this direction to the reported optimal solution keeps every observed-control residual unchanged but changes this well's bias by 1"
+        }
+      },
+      {
+        "well": "G8",
+        "row": 6,
+        "col": 7,
+        "role": "sample",
+        "sample_id": "S-far",
+        "expected": null,
+        "observed": {
+          "exact": "139/12",
+          "float": 11.583333333333334
+        },
+        "bias": {
+          "exact": "1/12",
+          "float": 0.08333333333333333
+        },
+        "bias_identifiable": false,
+        "corrected": null,
+        "residual": null,
+        "status": "UNIDENTIFIABLE",
+        "unidentifiability_proof": {
+          "direction_index": 1,
+          "bias_delta": "1",
+          "delta_b": "1",
+          "delta_rows": {
+            "0": "-1",
+            "1": "-1",
+            "2": "0",
+            "3": "-1",
+            "4": "-1",
+            "5": "0",
+            "6": "0",
+            "7": "4"
+          },
+          "delta_cols": {
+            "0": "0",
+            "1": "0",
+            "2": "0",
+            "3": "0",
+            "4": "0",
+            "5": "0",
+            "6": "0",
+            "7": "0",
+            "8": "0",
+            "9": "0",
+            "10": "0",
+            "11": "0"
+          },
+          "statement": "adding this direction to the reported optimal solution keeps every observed-control residual unchanged but changes this well's bias by 1"
+        }
+      }
+    ],
+    "samples": [
+      {
+        "sample_id": "S-far",
+        "wells": [
+          "F7",
+          "G8"
+        ],
+        "status": "INCOMPLETE",
+        "corrected_values": {},
+        "mean": null,
+        "range": null,
+        "reasons": [
+          {
+            "well": "F7",
+            "status": "UNIDENTIFIABLE",
+            "detail": "bias is not unique across least-squares minimisers",
+            "proof": {
+              "direction_index": 1,
+              "bias_delta": "1",
+              "delta_b": "1",
+              "delta_rows": {
+                "0": "-1",
+                "1": "-1",
+                "2": "0",
+                "3": "-1",
+                "4": "-1",
+                "5": "0",
+                "6": "0",
+                "7": "4"
+              },
+              "delta_cols": {
+                "0": "0",
+                "1": "0",
+                "2": "0",
+                "3": "0",
+                "4": "0",
+                "5": "0",
+                "6": "0",
+                "7": "0",
+                "8": "0",
+                "9": "0",
+                "10": "0",
+                "11": "0"
+              },
+              "statement": "adding this direction to the reported optimal solution keeps every observed-control residual unchanged but changes this well's bias by 1"
+            }
+          },
+          {
+            "well": "G8",
+            "status": "UNIDENTIFIABLE",
+            "detail": "bias is not unique across least-squares minimisers",
+            "proof": {
+              "direction_index": 1,
+              "bias_delta": "1",
+              "delta_b": "1",
+              "delta_rows": {
+                "0": "-1",
+                "1": "-1",
+                "2": "0",
+                "3": "-1",
+                "4": "-1",
+                "5": "0",
+                "6": "0",
+                "7": "4"
+              },
+              "delta_cols": {
+                "0": "0",
+                "1": "0",
+                "2": "0",
+                "3": "0",
+                "4": "0",
+                "5": "0",
+                "6": "0",
+                "7": "0",
+                "8": "0",
+                "9": "0",
+                "10": "0",
+                "11": "0"
+              },
+              "statement": "adding this direction to the reported optimal solution keeps every observed-control residual unchanged but changes this well's bias by 1"
+            }
+          }
+        ]
+      },
+      {
+        "sample_id": "S-near",
+        "wells": [
+          "A3",
+          "B2"
+        ],
+        "status": "COMPLETE",
+        "corrected_values": {
+          "A3": {
+            "exact": "3",
+            "float": 3.0
+          },
+          "B2": {
+            "exact": "3",
+            "float": 3.0
+          }
+        },
+        "mean": {
+          "exact": "3",
+          "float": 3.0
+        },
+        "range": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "reasons": []
+      }
+    ],
+    "verification": {
+      "normal_equations_zero": true,
+      "control_residuals_reproduced": true,
+      "sum_row_effects_zero": true,
+      "sum_col_effects_zero": true,
+      "nullspace_annihilates_controls": true,
+      "nullity_matches_basis": true,
+      "identifiability_claims_verified": true,
+      "sample_summaries_verified": true,
+      "numerical_rank": 7,
+      "exact_rank": 7,
+      "rank_tolerance": 3.4306320545519886e-09,
+      "numerical_rank_agrees": true,
+      "ok": true
+    }
+  }
+}

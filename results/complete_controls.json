@@ -1,0 +1,4255 @@
+{
+  "name": "complete_controls",
+  "description": "Every well is a control, so all 19 bias parameters are identifiable. One sample well carries a deliberate +1/5 perturbation; its corrected value and the other, noise-free samples recover the generating values.",
+  "headline": "rank 19/19, nullity 0, missing 0, complete ['S-alpha', 'S-beta', 'S-gamma'], incomplete []",
+  "truth": {
+    "b": "2/5",
+    "sample_values": {
+      "S-alpha": "4",
+      "S-beta": "9/2",
+      "S-gamma": "11/3"
+    },
+    "row_effects": {
+      "0": "-7/2",
+      "1": "-5/2",
+      "2": "-3/2",
+      "3": "-1/2",
+      "4": "1/2",
+      "5": "3/2",
+      "6": "5/2",
+      "7": "7/2"
+    },
+    "col_effects": {
+      "0": "-11/4",
+      "1": "-9/4",
+      "2": "-7/4",
+      "3": "-5/4",
+      "4": "-3/4",
+      "5": "-1/4",
+      "6": "1/4",
+      "7": "3/4",
+      "8": "5/4",
+      "9": "7/4",
+      "10": "9/4",
+      "11": "11/4"
+    }
+  },
+  "layout": {
+    "format": "plate-layout/v1",
+    "plate_id": "plate-complete",
+    "rows": 8,
+    "cols": 12,
+    "version": 100,
+    "digest": "41bad36835277088dfb21167649b769c9f88716ad83638436eab8176d5eeb704",
+    "min_replicates": 2,
+    "max_replicates": 3,
+    "sample_bounds": [],
+    "wells": [
+      {
+        "well": "A1",
+        "row": 0,
+        "col": 0,
+        "role": "sample",
+        "expected": null,
+        "sample_id": "S-alpha",
+        "blocked": false,
+        "provenance": "define_sample:S-alpha"
+      },
+      {
+        "well": "A2",
+        "row": 0,
+        "col": 1,
+        "role": "reference",
+        "expected": "1/2",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_reference"
+      },
+      {
+        "well": "A3",
+        "row": 0,
+        "col": 2,
+        "role": "blank",
+        "expected": "0",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_blank"
+      },
+      {
+        "well": "A4",
+        "row": 0,
+        "col": 3,
+        "role": "reference",
+        "expected": "1/2",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_reference"
+      },
+      {
+        "well": "A5",
+        "row": 0,
+        "col": 4,
+        "role": "blank",
+        "expected": "0",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_blank"
+      },
+      {
+        "well": "A6",
+        "row": 0,
+        "col": 5,
+        "role": "reference",
+        "expected": "1/2",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_reference"
+      },
+      {
+        "well": "A7",
+        "row": 0,
+        "col": 6,
+        "role": "blank",
+        "expected": "0",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_blank"
+      },
+      {
+        "well": "A8",
+        "row": 0,
+        "col": 7,
+        "role": "reference",
+        "expected": "1/2",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_reference"
+      },
+      {
+        "well": "A9",
+        "row": 0,
+        "col": 8,
+        "role": "blank",
+        "expected": "0",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_blank"
+      },
+      {
+        "well": "A10",
+        "row": 0,
+        "col": 9,
+        "role": "reference",
+        "expected": "1/2",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_reference"
+      },
+      {
+        "well": "A11",
+        "row": 0,
+        "col": 10,
+        "role": "blank",
+        "expected": "0",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_blank"
+      },
+      {
+        "well": "A12",
+        "row": 0,
+        "col": 11,
+        "role": "reference",
+        "expected": "1/2",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_reference"
+      },
+      {
+        "well": "B1",
+        "row": 1,
+        "col": 0,
+        "role": "reference",
+        "expected": "1",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_reference"
+      },
+      {
+        "well": "B2",
+        "row": 1,
+        "col": 1,
+        "role": "sample",
+        "expected": null,
+        "sample_id": "S-alpha",
+        "blocked": false,
+        "provenance": "define_sample:S-alpha"
+      },
+      {
+        "well": "B3",
+        "row": 1,
+        "col": 2,
+        "role": "reference",
+        "expected": "1",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_reference"
+      },
+      {
+        "well": "B4",
+        "row": 1,
+        "col": 3,
+        "role": "blank",
+        "expected": "0",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_blank"
+      },
+      {
+        "well": "B5",
+        "row": 1,
+        "col": 4,
+        "role": "reference",
+        "expected": "1",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_reference"
+      },
+      {
+        "well": "B6",
+        "row": 1,
+        "col": 5,
+        "role": "blank",
+        "expected": "0",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_blank"
+      },
+      {
+        "well": "B7",
+        "row": 1,
+        "col": 6,
+        "role": "reference",
+        "expected": "1",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_reference"
+      },
+      {
+        "well": "B8",
+        "row": 1,
+        "col": 7,
+        "role": "blank",
+        "expected": "0",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_blank"
+      },
+      {
+        "well": "B9",
+        "row": 1,
+        "col": 8,
+        "role": "reference",
+        "expected": "1",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_reference"
+      },
+      {
+        "well": "B10",
+        "row": 1,
+        "col": 9,
+        "role": "blank",
+        "expected": "0",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_blank"
+      },
+      {
+        "well": "B11",
+        "row": 1,
+        "col": 10,
+        "role": "reference",
+        "expected": "1",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_reference"
+      },
+      {
+        "well": "B12",
+        "row": 1,
+        "col": 11,
+        "role": "blank",
+        "expected": "0",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_blank"
+      },
+      {
+        "well": "C1",
+        "row": 2,
+        "col": 0,
+        "role": "blank",
+        "expected": "0",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_blank"
+      },
+      {
+        "well": "C2",
+        "row": 2,
+        "col": 1,
+        "role": "reference",
+        "expected": "3/2",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_reference"
+      },
+      {
+        "well": "C3",
+        "row": 2,
+        "col": 2,
+        "role": "sample",
+        "expected": null,
+        "sample_id": "S-beta",
+        "blocked": false,
+        "provenance": "define_sample:S-beta"
+      },
+      {
+        "well": "C4",
+        "row": 2,
+        "col": 3,
+        "role": "reference",
+        "expected": "3/2",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_reference"
+      },
+      {
+        "well": "C5",
+        "row": 2,
+        "col": 4,
+        "role": "blank",
+        "expected": "0",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_blank"
+      },
+      {
+        "well": "C6",
+        "row": 2,
+        "col": 5,
+        "role": "reference",
+        "expected": "3/2",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_reference"
+      },
+      {
+        "well": "C7",
+        "row": 2,
+        "col": 6,
+        "role": "blank",
+        "expected": "0",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_blank"
+      },
+      {
+        "well": "C8",
+        "row": 2,
+        "col": 7,
+        "role": "reference",
+        "expected": "3/2",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_reference"
+      },
+      {
+        "well": "C9",
+        "row": 2,
+        "col": 8,
+        "role": "blank",
+        "expected": "0",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_blank"
+      },
+      {
+        "well": "C10",
+        "row": 2,
+        "col": 9,
+        "role": "reference",
+        "expected": "3/2",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_reference"
+      },
+      {
+        "well": "C11",
+        "row": 2,
+        "col": 10,
+        "role": "blank",
+        "expected": "0",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_blank"
+      },
+      {
+        "well": "C12",
+        "row": 2,
+        "col": 11,
+        "role": "reference",
+        "expected": "3/2",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_reference"
+      },
+      {
+        "well": "D1",
+        "row": 3,
+        "col": 0,
+        "role": "reference",
+        "expected": "2",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_reference"
+      },
+      {
+        "well": "D2",
+        "row": 3,
+        "col": 1,
+        "role": "blank",
+        "expected": "0",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_blank"
+      },
+      {
+        "well": "D3",
+        "row": 3,
+        "col": 2,
+        "role": "reference",
+        "expected": "2",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_reference"
+      },
+      {
+        "well": "D4",
+        "row": 3,
+        "col": 3,
+        "role": "sample",
+        "expected": null,
+        "sample_id": "S-beta",
+        "blocked": false,
+        "provenance": "define_sample:S-beta"
+      },
+      {
+        "well": "D5",
+        "row": 3,
+        "col": 4,
+        "role": "reference",
+        "expected": "2",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_reference"
+      },
+      {
+        "well": "D6",
+        "row": 3,
+        "col": 5,
+        "role": "blank",
+        "expected": "0",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_blank"
+      },
+      {
+        "well": "D7",
+        "row": 3,
+        "col": 6,
+        "role": "reference",
+        "expected": "2",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_reference"
+      },
+      {
+        "well": "D8",
+        "row": 3,
+        "col": 7,
+        "role": "blank",
+        "expected": "0",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_blank"
+      },
+      {
+        "well": "D9",
+        "row": 3,
+        "col": 8,
+        "role": "reference",
+        "expected": "2",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_reference"
+      },
+      {
+        "well": "D10",
+        "row": 3,
+        "col": 9,
+        "role": "blank",
+        "expected": "0",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_blank"
+      },
+      {
+        "well": "D11",
+        "row": 3,
+        "col": 10,
+        "role": "reference",
+        "expected": "2",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_reference"
+      },
+      {
+        "well": "D12",
+        "row": 3,
+        "col": 11,
+        "role": "blank",
+        "expected": "0",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_blank"
+      },
+      {
+        "well": "E1",
+        "row": 4,
+        "col": 0,
+        "role": "blank",
+        "expected": "0",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_blank"
+      },
+      {
+        "well": "E2",
+        "row": 4,
+        "col": 1,
+        "role": "reference",
+        "expected": "5/2",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_reference"
+      },
+      {
+        "well": "E3",
+        "row": 4,
+        "col": 2,
+        "role": "blank",
+        "expected": "0",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_blank"
+      },
+      {
+        "well": "E4",
+        "row": 4,
+        "col": 3,
+        "role": "reference",
+        "expected": "5/2",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_reference"
+      },
+      {
+        "well": "E5",
+        "row": 4,
+        "col": 4,
+        "role": "sample",
+        "expected": null,
+        "sample_id": "S-gamma",
+        "blocked": false,
+        "provenance": "define_sample:S-gamma"
+      },
+      {
+        "well": "E6",
+        "row": 4,
+        "col": 5,
+        "role": "reference",
+        "expected": "5/2",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_reference"
+      },
+      {
+        "well": "E7",
+        "row": 4,
+        "col": 6,
+        "role": "blank",
+        "expected": "0",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_blank"
+      },
+      {
+        "well": "E8",
+        "row": 4,
+        "col": 7,
+        "role": "reference",
+        "expected": "5/2",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_reference"
+      },
+      {
+        "well": "E9",
+        "row": 4,
+        "col": 8,
+        "role": "blank",
+        "expected": "0",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_blank"
+      },
+      {
+        "well": "E10",
+        "row": 4,
+        "col": 9,
+        "role": "reference",
+        "expected": "5/2",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_reference"
+      },
+      {
+        "well": "E11",
+        "row": 4,
+        "col": 10,
+        "role": "blank",
+        "expected": "0",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_blank"
+      },
+      {
+        "well": "E12",
+        "row": 4,
+        "col": 11,
+        "role": "reference",
+        "expected": "5/2",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_reference"
+      },
+      {
+        "well": "F1",
+        "row": 5,
+        "col": 0,
+        "role": "reference",
+        "expected": "3",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_reference"
+      },
+      {
+        "well": "F2",
+        "row": 5,
+        "col": 1,
+        "role": "blank",
+        "expected": "0",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_blank"
+      },
+      {
+        "well": "F3",
+        "row": 5,
+        "col": 2,
+        "role": "reference",
+        "expected": "3",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_reference"
+      },
+      {
+        "well": "F4",
+        "row": 5,
+        "col": 3,
+        "role": "blank",
+        "expected": "0",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_blank"
+      },
+      {
+        "well": "F5",
+        "row": 5,
+        "col": 4,
+        "role": "reference",
+        "expected": "3",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_reference"
+      },
+      {
+        "well": "F6",
+        "row": 5,
+        "col": 5,
+        "role": "sample",
+        "expected": null,
+        "sample_id": "S-gamma",
+        "blocked": false,
+        "provenance": "define_sample:S-gamma"
+      },
+      {
+        "well": "F7",
+        "row": 5,
+        "col": 6,
+        "role": "reference",
+        "expected": "3",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_reference"
+      },
+      {
+        "well": "F8",
+        "row": 5,
+        "col": 7,
+        "role": "blank",
+        "expected": "0",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_blank"
+      },
+      {
+        "well": "F9",
+        "row": 5,
+        "col": 8,
+        "role": "reference",
+        "expected": "3",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_reference"
+      },
+      {
+        "well": "F10",
+        "row": 5,
+        "col": 9,
+        "role": "blank",
+        "expected": "0",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_blank"
+      },
+      {
+        "well": "F11",
+        "row": 5,
+        "col": 10,
+        "role": "reference",
+        "expected": "3",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_reference"
+      },
+      {
+        "well": "F12",
+        "row": 5,
+        "col": 11,
+        "role": "blank",
+        "expected": "0",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_blank"
+      },
+      {
+        "well": "G1",
+        "row": 6,
+        "col": 0,
+        "role": "blank",
+        "expected": "0",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_blank"
+      },
+      {
+        "well": "G2",
+        "row": 6,
+        "col": 1,
+        "role": "reference",
+        "expected": "7/2",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_reference"
+      },
+      {
+        "well": "G3",
+        "row": 6,
+        "col": 2,
+        "role": "blank",
+        "expected": "0",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_blank"
+      },
+      {
+        "well": "G4",
+        "row": 6,
+        "col": 3,
+        "role": "reference",
+        "expected": "7/2",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_reference"
+      },
+      {
+        "well": "G5",
+        "row": 6,
+        "col": 4,
+        "role": "blank",
+        "expected": "0",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_blank"
+      },
+      {
+        "well": "G6",
+        "row": 6,
+        "col": 5,
+        "role": "reference",
+        "expected": "7/2",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_reference"
+      },
+      {
+        "well": "G7",
+        "row": 6,
+        "col": 6,
+        "role": "blank",
+        "expected": "0",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_blank"
+      },
+      {
+        "well": "G8",
+        "row": 6,
+        "col": 7,
+        "role": "reference",
+        "expected": "7/2",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_reference"
+      },
+      {
+        "well": "G9",
+        "row": 6,
+        "col": 8,
+        "role": "blank",
+        "expected": "0",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_blank"
+      },
+      {
+        "well": "G10",
+        "row": 6,
+        "col": 9,
+        "role": "reference",
+        "expected": "7/2",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_reference"
+      },
+      {
+        "well": "G11",
+        "row": 6,
+        "col": 10,
+        "role": "blank",
+        "expected": "0",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_blank"
+      },
+      {
+        "well": "G12",
+        "row": 6,
+        "col": 11,
+        "role": "reference",
+        "expected": "7/2",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_reference"
+      },
+      {
+        "well": "H1",
+        "row": 7,
+        "col": 0,
+        "role": "reference",
+        "expected": "4",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_reference"
+      },
+      {
+        "well": "H2",
+        "row": 7,
+        "col": 1,
+        "role": "blank",
+        "expected": "0",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_blank"
+      },
+      {
+        "well": "H3",
+        "row": 7,
+        "col": 2,
+        "role": "reference",
+        "expected": "4",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_reference"
+      },
+      {
+        "well": "H4",
+        "row": 7,
+        "col": 3,
+        "role": "blank",
+        "expected": "0",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_blank"
+      },
+      {
+        "well": "H5",
+        "row": 7,
+        "col": 4,
+        "role": "reference",
+        "expected": "4",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_reference"
+      },
+      {
+        "well": "H6",
+        "row": 7,
+        "col": 5,
+        "role": "blank",
+        "expected": "0",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_blank"
+      },
+      {
+        "well": "H7",
+        "row": 7,
+        "col": 6,
+        "role": "reference",
+        "expected": "4",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_reference"
+      },
+      {
+        "well": "H8",
+        "row": 7,
+        "col": 7,
+        "role": "blank",
+        "expected": "0",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_blank"
+      },
+      {
+        "well": "H9",
+        "row": 7,
+        "col": 8,
+        "role": "reference",
+        "expected": "4",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_reference"
+      },
+      {
+        "well": "H10",
+        "row": 7,
+        "col": 9,
+        "role": "blank",
+        "expected": "0",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_blank"
+      },
+      {
+        "well": "H11",
+        "row": 7,
+        "col": 10,
+        "role": "reference",
+        "expected": "4",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_reference"
+      },
+      {
+        "well": "H12",
+        "row": 7,
+        "col": 11,
+        "role": "blank",
+        "expected": "0",
+        "sample_id": null,
+        "blocked": false,
+        "provenance": "set_blank"
+      }
+    ]
+  },
+  "missing_used_wells": [],
+  "report": {
+    "run_id": "complete-controls",
+    "plate_id": "plate-complete",
+    "layout_version": 100,
+    "layout_digest": "41bad36835277088dfb21167649b769c9f88716ad83638436eab8176d5eeb704",
+    "control_wells": [
+      "A2",
+      "A3",
+      "A4",
+      "A5",
+      "A6",
+      "A7",
+      "A8",
+      "A9",
+      "A10",
+      "A11",
+      "A12",
+      "B1",
+      "B3",
+      "B4",
+      "B5",
+      "B6",
+      "B7",
+      "B8",
+      "B9",
+      "B10",
+      "B11",
+      "B12",
+      "C1",
+      "C2",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "D1",
+      "D2",
+      "D3",
+      "D5",
+      "D6",
+      "D7",
+      "D8",
+      "D9",
+      "D10",
+      "D11",
+      "D12",
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E6",
+      "E7",
+      "E8",
+      "E9",
+      "E10",
+      "E11",
+      "E12",
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F7",
+      "F8",
+      "F9",
+      "F10",
+      "F11",
+      "F12",
+      "G1",
+      "G2",
+      "G3",
+      "G4",
+      "G5",
+      "G6",
+      "G7",
+      "G8",
+      "G9",
+      "G10",
+      "G11",
+      "G12",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "H6",
+      "H7",
+      "H8",
+      "H9",
+      "H10",
+      "H11",
+      "H12"
+    ],
+    "missing_control_wells": [],
+    "observed_control_count": 90,
+    "linear_system": {
+      "rank": 19,
+      "n_parameters": 19,
+      "nullity": 0,
+      "numerical_rank_crosscheck": 19,
+      "numerical_rank_tolerance": 9.797958971132716e-09
+    },
+    "control_residuals": {
+      "sum_of_squares": {
+        "exact": "0",
+        "float": 0.0
+      },
+      "max_abs": {
+        "exact": "0",
+        "float": 0.0
+      },
+      "per_well": {
+        "A2": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "A3": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "A4": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "A5": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "A6": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "A7": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "A8": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "A9": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "A10": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "A11": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "A12": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "B1": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "B3": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "B4": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "B5": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "B6": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "B7": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "B8": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "B9": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "B10": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "B11": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "B12": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "C1": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "C2": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "C4": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "C5": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "C6": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "C7": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "C8": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "C9": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "C10": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "C11": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "C12": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "D1": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "D2": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "D3": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "D5": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "D6": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "D7": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "D8": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "D9": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "D10": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "D11": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "D12": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "E1": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "E2": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "E3": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "E4": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "E6": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "E7": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "E8": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "E9": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "E10": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "E11": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "E12": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "F1": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "F2": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "F3": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "F4": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "F5": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "F7": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "F8": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "F9": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "F10": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "F11": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "F12": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "G1": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "G2": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "G3": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "G4": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "G5": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "G6": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "G7": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "G8": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "G9": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "G10": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "G11": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "G12": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "H1": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "H2": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "H3": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "H4": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "H5": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "H6": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "H7": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "H8": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "H9": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "H10": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "H11": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "H12": {
+          "exact": "0",
+          "float": 0.0
+        }
+      }
+    },
+    "parameter_unique": true,
+    "one_optimal_solution": {
+      "b": {
+        "exact": "2/5",
+        "float": 0.4
+      },
+      "rows": {
+        "0": {
+          "exact": "-7/2",
+          "float": -3.5
+        },
+        "1": {
+          "exact": "-5/2",
+          "float": -2.5
+        },
+        "2": {
+          "exact": "-3/2",
+          "float": -1.5
+        },
+        "3": {
+          "exact": "-1/2",
+          "float": -0.5
+        },
+        "4": {
+          "exact": "1/2",
+          "float": 0.5
+        },
+        "5": {
+          "exact": "3/2",
+          "float": 1.5
+        },
+        "6": {
+          "exact": "5/2",
+          "float": 2.5
+        },
+        "7": {
+          "exact": "7/2",
+          "float": 3.5
+        }
+      },
+      "cols": {
+        "0": {
+          "exact": "-11/4",
+          "float": -2.75
+        },
+        "1": {
+          "exact": "-9/4",
+          "float": -2.25
+        },
+        "2": {
+          "exact": "-7/4",
+          "float": -1.75
+        },
+        "3": {
+          "exact": "-5/4",
+          "float": -1.25
+        },
+        "4": {
+          "exact": "-3/4",
+          "float": -0.75
+        },
+        "5": {
+          "exact": "-1/4",
+          "float": -0.25
+        },
+        "6": {
+          "exact": "1/4",
+          "float": 0.25
+        },
+        "7": {
+          "exact": "3/4",
+          "float": 0.75
+        },
+        "8": {
+          "exact": "5/4",
+          "float": 1.25
+        },
+        "9": {
+          "exact": "7/4",
+          "float": 1.75
+        },
+        "10": {
+          "exact": "9/4",
+          "float": 2.25
+        },
+        "11": {
+          "exact": "11/4",
+          "float": 2.75
+        }
+      }
+    },
+    "wells": [
+      {
+        "well": "A1",
+        "row": 0,
+        "col": 0,
+        "role": "sample",
+        "sample_id": "S-alpha",
+        "expected": null,
+        "observed": {
+          "exact": "-33/20",
+          "float": -1.65
+        },
+        "bias": {
+          "exact": "-117/20",
+          "float": -5.85
+        },
+        "bias_identifiable": true,
+        "corrected": {
+          "exact": "21/5",
+          "float": 4.2
+        },
+        "residual": null,
+        "status": "CORRECTED",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "A2",
+        "row": 0,
+        "col": 1,
+        "role": "reference",
+        "sample_id": null,
+        "expected": {
+          "exact": "1/2",
+          "float": 0.5
+        },
+        "observed": {
+          "exact": "-97/20",
+          "float": -4.85
+        },
+        "bias": {
+          "exact": "-107/20",
+          "float": -5.35
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "A3",
+        "row": 0,
+        "col": 2,
+        "role": "blank",
+        "sample_id": null,
+        "expected": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "observed": {
+          "exact": "-97/20",
+          "float": -4.85
+        },
+        "bias": {
+          "exact": "-97/20",
+          "float": -4.85
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "A4",
+        "row": 0,
+        "col": 3,
+        "role": "reference",
+        "sample_id": null,
+        "expected": {
+          "exact": "1/2",
+          "float": 0.5
+        },
+        "observed": {
+          "exact": "-77/20",
+          "float": -3.85
+        },
+        "bias": {
+          "exact": "-87/20",
+          "float": -4.35
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "A5",
+        "row": 0,
+        "col": 4,
+        "role": "blank",
+        "sample_id": null,
+        "expected": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "observed": {
+          "exact": "-77/20",
+          "float": -3.85
+        },
+        "bias": {
+          "exact": "-77/20",
+          "float": -3.85
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "A6",
+        "row": 0,
+        "col": 5,
+        "role": "reference",
+        "sample_id": null,
+        "expected": {
+          "exact": "1/2",
+          "float": 0.5
+        },
+        "observed": {
+          "exact": "-57/20",
+          "float": -2.85
+        },
+        "bias": {
+          "exact": "-67/20",
+          "float": -3.35
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "A7",
+        "row": 0,
+        "col": 6,
+        "role": "blank",
+        "sample_id": null,
+        "expected": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "observed": {
+          "exact": "-57/20",
+          "float": -2.85
+        },
+        "bias": {
+          "exact": "-57/20",
+          "float": -2.85
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "A8",
+        "row": 0,
+        "col": 7,
+        "role": "reference",
+        "sample_id": null,
+        "expected": {
+          "exact": "1/2",
+          "float": 0.5
+        },
+        "observed": {
+          "exact": "-37/20",
+          "float": -1.85
+        },
+        "bias": {
+          "exact": "-47/20",
+          "float": -2.35
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "A9",
+        "row": 0,
+        "col": 8,
+        "role": "blank",
+        "sample_id": null,
+        "expected": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "observed": {
+          "exact": "-37/20",
+          "float": -1.85
+        },
+        "bias": {
+          "exact": "-37/20",
+          "float": -1.85
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "A10",
+        "row": 0,
+        "col": 9,
+        "role": "reference",
+        "sample_id": null,
+        "expected": {
+          "exact": "1/2",
+          "float": 0.5
+        },
+        "observed": {
+          "exact": "-17/20",
+          "float": -0.85
+        },
+        "bias": {
+          "exact": "-27/20",
+          "float": -1.35
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "A11",
+        "row": 0,
+        "col": 10,
+        "role": "blank",
+        "sample_id": null,
+        "expected": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "observed": {
+          "exact": "-17/20",
+          "float": -0.85
+        },
+        "bias": {
+          "exact": "-17/20",
+          "float": -0.85
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "A12",
+        "row": 0,
+        "col": 11,
+        "role": "reference",
+        "sample_id": null,
+        "expected": {
+          "exact": "1/2",
+          "float": 0.5
+        },
+        "observed": {
+          "exact": "3/20",
+          "float": 0.15
+        },
+        "bias": {
+          "exact": "-7/20",
+          "float": -0.35
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "B1",
+        "row": 1,
+        "col": 0,
+        "role": "reference",
+        "sample_id": null,
+        "expected": {
+          "exact": "1",
+          "float": 1.0
+        },
+        "observed": {
+          "exact": "-77/20",
+          "float": -3.85
+        },
+        "bias": {
+          "exact": "-97/20",
+          "float": -4.85
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "B2",
+        "row": 1,
+        "col": 1,
+        "role": "sample",
+        "sample_id": "S-alpha",
+        "expected": null,
+        "observed": {
+          "exact": "-7/20",
+          "float": -0.35
+        },
+        "bias": {
+          "exact": "-87/20",
+          "float": -4.35
+        },
+        "bias_identifiable": true,
+        "corrected": {
+          "exact": "4",
+          "float": 4.0
+        },
+        "residual": null,
+        "status": "CORRECTED",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "B3",
+        "row": 1,
+        "col": 2,
+        "role": "reference",
+        "sample_id": null,
+        "expected": {
+          "exact": "1",
+          "float": 1.0
+        },
+        "observed": {
+          "exact": "-57/20",
+          "float": -2.85
+        },
+        "bias": {
+          "exact": "-77/20",
+          "float": -3.85
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "B4",
+        "row": 1,
+        "col": 3,
+        "role": "blank",
+        "sample_id": null,
+        "expected": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "observed": {
+          "exact": "-67/20",
+          "float": -3.35
+        },
+        "bias": {
+          "exact": "-67/20",
+          "float": -3.35
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "B5",
+        "row": 1,
+        "col": 4,
+        "role": "reference",
+        "sample_id": null,
+        "expected": {
+          "exact": "1",
+          "float": 1.0
+        },
+        "observed": {
+          "exact": "-37/20",
+          "float": -1.85
+        },
+        "bias": {
+          "exact": "-57/20",
+          "float": -2.85
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "B6",
+        "row": 1,
+        "col": 5,
+        "role": "blank",
+        "sample_id": null,
+        "expected": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "observed": {
+          "exact": "-47/20",
+          "float": -2.35
+        },
+        "bias": {
+          "exact": "-47/20",
+          "float": -2.35
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "B7",
+        "row": 1,
+        "col": 6,
+        "role": "reference",
+        "sample_id": null,
+        "expected": {
+          "exact": "1",
+          "float": 1.0
+        },
+        "observed": {
+          "exact": "-17/20",
+          "float": -0.85
+        },
+        "bias": {
+          "exact": "-37/20",
+          "float": -1.85
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "B8",
+        "row": 1,
+        "col": 7,
+        "role": "blank",
+        "sample_id": null,
+        "expected": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "observed": {
+          "exact": "-27/20",
+          "float": -1.35
+        },
+        "bias": {
+          "exact": "-27/20",
+          "float": -1.35
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "B9",
+        "row": 1,
+        "col": 8,
+        "role": "reference",
+        "sample_id": null,
+        "expected": {
+          "exact": "1",
+          "float": 1.0
+        },
+        "observed": {
+          "exact": "3/20",
+          "float": 0.15
+        },
+        "bias": {
+          "exact": "-17/20",
+          "float": -0.85
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "B10",
+        "row": 1,
+        "col": 9,
+        "role": "blank",
+        "sample_id": null,
+        "expected": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "observed": {
+          "exact": "-7/20",
+          "float": -0.35
+        },
+        "bias": {
+          "exact": "-7/20",
+          "float": -0.35
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "B11",
+        "row": 1,
+        "col": 10,
+        "role": "reference",
+        "sample_id": null,
+        "expected": {
+          "exact": "1",
+          "float": 1.0
+        },
+        "observed": {
+          "exact": "23/20",
+          "float": 1.15
+        },
+        "bias": {
+          "exact": "3/20",
+          "float": 0.15
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "B12",
+        "row": 1,
+        "col": 11,
+        "role": "blank",
+        "sample_id": null,
+        "expected": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "observed": {
+          "exact": "13/20",
+          "float": 0.65
+        },
+        "bias": {
+          "exact": "13/20",
+          "float": 0.65
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "C1",
+        "row": 2,
+        "col": 0,
+        "role": "blank",
+        "sample_id": null,
+        "expected": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "observed": {
+          "exact": "-77/20",
+          "float": -3.85
+        },
+        "bias": {
+          "exact": "-77/20",
+          "float": -3.85
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "C2",
+        "row": 2,
+        "col": 1,
+        "role": "reference",
+        "sample_id": null,
+        "expected": {
+          "exact": "3/2",
+          "float": 1.5
+        },
+        "observed": {
+          "exact": "-37/20",
+          "float": -1.85
+        },
+        "bias": {
+          "exact": "-67/20",
+          "float": -3.35
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "C3",
+        "row": 2,
+        "col": 2,
+        "role": "sample",
+        "sample_id": "S-beta",
+        "expected": null,
+        "observed": {
+          "exact": "33/20",
+          "float": 1.65
+        },
+        "bias": {
+          "exact": "-57/20",
+          "float": -2.85
+        },
+        "bias_identifiable": true,
+        "corrected": {
+          "exact": "9/2",
+          "float": 4.5
+        },
+        "residual": null,
+        "status": "CORRECTED",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "C4",
+        "row": 2,
+        "col": 3,
+        "role": "reference",
+        "sample_id": null,
+        "expected": {
+          "exact": "3/2",
+          "float": 1.5
+        },
+        "observed": {
+          "exact": "-17/20",
+          "float": -0.85
+        },
+        "bias": {
+          "exact": "-47/20",
+          "float": -2.35
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "C5",
+        "row": 2,
+        "col": 4,
+        "role": "blank",
+        "sample_id": null,
+        "expected": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "observed": {
+          "exact": "-37/20",
+          "float": -1.85
+        },
+        "bias": {
+          "exact": "-37/20",
+          "float": -1.85
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "C6",
+        "row": 2,
+        "col": 5,
+        "role": "reference",
+        "sample_id": null,
+        "expected": {
+          "exact": "3/2",
+          "float": 1.5
+        },
+        "observed": {
+          "exact": "3/20",
+          "float": 0.15
+        },
+        "bias": {
+          "exact": "-27/20",
+          "float": -1.35
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "C7",
+        "row": 2,
+        "col": 6,
+        "role": "blank",
+        "sample_id": null,
+        "expected": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "observed": {
+          "exact": "-17/20",
+          "float": -0.85
+        },
+        "bias": {
+          "exact": "-17/20",
+          "float": -0.85
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "C8",
+        "row": 2,
+        "col": 7,
+        "role": "reference",
+        "sample_id": null,
+        "expected": {
+          "exact": "3/2",
+          "float": 1.5
+        },
+        "observed": {
+          "exact": "23/20",
+          "float": 1.15
+        },
+        "bias": {
+          "exact": "-7/20",
+          "float": -0.35
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "C9",
+        "row": 2,
+        "col": 8,
+        "role": "blank",
+        "sample_id": null,
+        "expected": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "observed": {
+          "exact": "3/20",
+          "float": 0.15
+        },
+        "bias": {
+          "exact": "3/20",
+          "float": 0.15
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "C10",
+        "row": 2,
+        "col": 9,
+        "role": "reference",
+        "sample_id": null,
+        "expected": {
+          "exact": "3/2",
+          "float": 1.5
+        },
+        "observed": {
+          "exact": "43/20",
+          "float": 2.15
+        },
+        "bias": {
+          "exact": "13/20",
+          "float": 0.65
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "C11",
+        "row": 2,
+        "col": 10,
+        "role": "blank",
+        "sample_id": null,
+        "expected": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "observed": {
+          "exact": "23/20",
+          "float": 1.15
+        },
+        "bias": {
+          "exact": "23/20",
+          "float": 1.15
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "C12",
+        "row": 2,
+        "col": 11,
+        "role": "reference",
+        "sample_id": null,
+        "expected": {
+          "exact": "3/2",
+          "float": 1.5
+        },
+        "observed": {
+          "exact": "63/20",
+          "float": 3.15
+        },
+        "bias": {
+          "exact": "33/20",
+          "float": 1.65
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "D1",
+        "row": 3,
+        "col": 0,
+        "role": "reference",
+        "sample_id": null,
+        "expected": {
+          "exact": "2",
+          "float": 2.0
+        },
+        "observed": {
+          "exact": "-17/20",
+          "float": -0.85
+        },
+        "bias": {
+          "exact": "-57/20",
+          "float": -2.85
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "D2",
+        "row": 3,
+        "col": 1,
+        "role": "blank",
+        "sample_id": null,
+        "expected": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "observed": {
+          "exact": "-47/20",
+          "float": -2.35
+        },
+        "bias": {
+          "exact": "-47/20",
+          "float": -2.35
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "D3",
+        "row": 3,
+        "col": 2,
+        "role": "reference",
+        "sample_id": null,
+        "expected": {
+          "exact": "2",
+          "float": 2.0
+        },
+        "observed": {
+          "exact": "3/20",
+          "float": 0.15
+        },
+        "bias": {
+          "exact": "-37/20",
+          "float": -1.85
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "D4",
+        "row": 3,
+        "col": 3,
+        "role": "sample",
+        "sample_id": "S-beta",
+        "expected": null,
+        "observed": {
+          "exact": "63/20",
+          "float": 3.15
+        },
+        "bias": {
+          "exact": "-27/20",
+          "float": -1.35
+        },
+        "bias_identifiable": true,
+        "corrected": {
+          "exact": "9/2",
+          "float": 4.5
+        },
+        "residual": null,
+        "status": "CORRECTED",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "D5",
+        "row": 3,
+        "col": 4,
+        "role": "reference",
+        "sample_id": null,
+        "expected": {
+          "exact": "2",
+          "float": 2.0
+        },
+        "observed": {
+          "exact": "23/20",
+          "float": 1.15
+        },
+        "bias": {
+          "exact": "-17/20",
+          "float": -0.85
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "D6",
+        "row": 3,
+        "col": 5,
+        "role": "blank",
+        "sample_id": null,
+        "expected": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "observed": {
+          "exact": "-7/20",
+          "float": -0.35
+        },
+        "bias": {
+          "exact": "-7/20",
+          "float": -0.35
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "D7",
+        "row": 3,
+        "col": 6,
+        "role": "reference",
+        "sample_id": null,
+        "expected": {
+          "exact": "2",
+          "float": 2.0
+        },
+        "observed": {
+          "exact": "43/20",
+          "float": 2.15
+        },
+        "bias": {
+          "exact": "3/20",
+          "float": 0.15
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "D8",
+        "row": 3,
+        "col": 7,
+        "role": "blank",
+        "sample_id": null,
+        "expected": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "observed": {
+          "exact": "13/20",
+          "float": 0.65
+        },
+        "bias": {
+          "exact": "13/20",
+          "float": 0.65
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "D9",
+        "row": 3,
+        "col": 8,
+        "role": "reference",
+        "sample_id": null,
+        "expected": {
+          "exact": "2",
+          "float": 2.0
+        },
+        "observed": {
+          "exact": "63/20",
+          "float": 3.15
+        },
+        "bias": {
+          "exact": "23/20",
+          "float": 1.15
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "D10",
+        "row": 3,
+        "col": 9,
+        "role": "blank",
+        "sample_id": null,
+        "expected": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "observed": {
+          "exact": "33/20",
+          "float": 1.65
+        },
+        "bias": {
+          "exact": "33/20",
+          "float": 1.65
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "D11",
+        "row": 3,
+        "col": 10,
+        "role": "reference",
+        "sample_id": null,
+        "expected": {
+          "exact": "2",
+          "float": 2.0
+        },
+        "observed": {
+          "exact": "83/20",
+          "float": 4.15
+        },
+        "bias": {
+          "exact": "43/20",
+          "float": 2.15
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "D12",
+        "row": 3,
+        "col": 11,
+        "role": "blank",
+        "sample_id": null,
+        "expected": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "observed": {
+          "exact": "53/20",
+          "float": 2.65
+        },
+        "bias": {
+          "exact": "53/20",
+          "float": 2.65
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "E1",
+        "row": 4,
+        "col": 0,
+        "role": "blank",
+        "sample_id": null,
+        "expected": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "observed": {
+          "exact": "-37/20",
+          "float": -1.85
+        },
+        "bias": {
+          "exact": "-37/20",
+          "float": -1.85
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "E2",
+        "row": 4,
+        "col": 1,
+        "role": "reference",
+        "sample_id": null,
+        "expected": {
+          "exact": "5/2",
+          "float": 2.5
+        },
+        "observed": {
+          "exact": "23/20",
+          "float": 1.15
+        },
+        "bias": {
+          "exact": "-27/20",
+          "float": -1.35
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "E3",
+        "row": 4,
+        "col": 2,
+        "role": "blank",
+        "sample_id": null,
+        "expected": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "observed": {
+          "exact": "-17/20",
+          "float": -0.85
+        },
+        "bias": {
+          "exact": "-17/20",
+          "float": -0.85
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "E4",
+        "row": 4,
+        "col": 3,
+        "role": "reference",
+        "sample_id": null,
+        "expected": {
+          "exact": "5/2",
+          "float": 2.5
+        },
+        "observed": {
+          "exact": "43/20",
+          "float": 2.15
+        },
+        "bias": {
+          "exact": "-7/20",
+          "float": -0.35
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "E5",
+        "row": 4,
+        "col": 4,
+        "role": "sample",
+        "sample_id": "S-gamma",
+        "expected": null,
+        "observed": {
+          "exact": "229/60",
+          "float": 3.816666666666667
+        },
+        "bias": {
+          "exact": "3/20",
+          "float": 0.15
+        },
+        "bias_identifiable": true,
+        "corrected": {
+          "exact": "11/3",
+          "float": 3.6666666666666665
+        },
+        "residual": null,
+        "status": "CORRECTED",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "E6",
+        "row": 4,
+        "col": 5,
+        "role": "reference",
+        "sample_id": null,
+        "expected": {
+          "exact": "5/2",
+          "float": 2.5
+        },
+        "observed": {
+          "exact": "63/20",
+          "float": 3.15
+        },
+        "bias": {
+          "exact": "13/20",
+          "float": 0.65
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "E7",
+        "row": 4,
+        "col": 6,
+        "role": "blank",
+        "sample_id": null,
+        "expected": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "observed": {
+          "exact": "23/20",
+          "float": 1.15
+        },
+        "bias": {
+          "exact": "23/20",
+          "float": 1.15
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "E8",
+        "row": 4,
+        "col": 7,
+        "role": "reference",
+        "sample_id": null,
+        "expected": {
+          "exact": "5/2",
+          "float": 2.5
+        },
+        "observed": {
+          "exact": "83/20",
+          "float": 4.15
+        },
+        "bias": {
+          "exact": "33/20",
+          "float": 1.65
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "E9",
+        "row": 4,
+        "col": 8,
+        "role": "blank",
+        "sample_id": null,
+        "expected": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "observed": {
+          "exact": "43/20",
+          "float": 2.15
+        },
+        "bias": {
+          "exact": "43/20",
+          "float": 2.15
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "E10",
+        "row": 4,
+        "col": 9,
+        "role": "reference",
+        "sample_id": null,
+        "expected": {
+          "exact": "5/2",
+          "float": 2.5
+        },
+        "observed": {
+          "exact": "103/20",
+          "float": 5.15
+        },
+        "bias": {
+          "exact": "53/20",
+          "float": 2.65
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "E11",
+        "row": 4,
+        "col": 10,
+        "role": "blank",
+        "sample_id": null,
+        "expected": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "observed": {
+          "exact": "63/20",
+          "float": 3.15
+        },
+        "bias": {
+          "exact": "63/20",
+          "float": 3.15
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "E12",
+        "row": 4,
+        "col": 11,
+        "role": "reference",
+        "sample_id": null,
+        "expected": {
+          "exact": "5/2",
+          "float": 2.5
+        },
+        "observed": {
+          "exact": "123/20",
+          "float": 6.15
+        },
+        "bias": {
+          "exact": "73/20",
+          "float": 3.65
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "F1",
+        "row": 5,
+        "col": 0,
+        "role": "reference",
+        "sample_id": null,
+        "expected": {
+          "exact": "3",
+          "float": 3.0
+        },
+        "observed": {
+          "exact": "43/20",
+          "float": 2.15
+        },
+        "bias": {
+          "exact": "-17/20",
+          "float": -0.85
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "F2",
+        "row": 5,
+        "col": 1,
+        "role": "blank",
+        "sample_id": null,
+        "expected": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "observed": {
+          "exact": "-7/20",
+          "float": -0.35
+        },
+        "bias": {
+          "exact": "-7/20",
+          "float": -0.35
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "F3",
+        "row": 5,
+        "col": 2,
+        "role": "reference",
+        "sample_id": null,
+        "expected": {
+          "exact": "3",
+          "float": 3.0
+        },
+        "observed": {
+          "exact": "63/20",
+          "float": 3.15
+        },
+        "bias": {
+          "exact": "3/20",
+          "float": 0.15
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "F4",
+        "row": 5,
+        "col": 3,
+        "role": "blank",
+        "sample_id": null,
+        "expected": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "observed": {
+          "exact": "13/20",
+          "float": 0.65
+        },
+        "bias": {
+          "exact": "13/20",
+          "float": 0.65
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "F5",
+        "row": 5,
+        "col": 4,
+        "role": "reference",
+        "sample_id": null,
+        "expected": {
+          "exact": "3",
+          "float": 3.0
+        },
+        "observed": {
+          "exact": "83/20",
+          "float": 4.15
+        },
+        "bias": {
+          "exact": "23/20",
+          "float": 1.15
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "F6",
+        "row": 5,
+        "col": 5,
+        "role": "sample",
+        "sample_id": "S-gamma",
+        "expected": null,
+        "observed": {
+          "exact": "319/60",
+          "float": 5.316666666666666
+        },
+        "bias": {
+          "exact": "33/20",
+          "float": 1.65
+        },
+        "bias_identifiable": true,
+        "corrected": {
+          "exact": "11/3",
+          "float": 3.6666666666666665
+        },
+        "residual": null,
+        "status": "CORRECTED",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "F7",
+        "row": 5,
+        "col": 6,
+        "role": "reference",
+        "sample_id": null,
+        "expected": {
+          "exact": "3",
+          "float": 3.0
+        },
+        "observed": {
+          "exact": "103/20",
+          "float": 5.15
+        },
+        "bias": {
+          "exact": "43/20",
+          "float": 2.15
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "F8",
+        "row": 5,
+        "col": 7,
+        "role": "blank",
+        "sample_id": null,
+        "expected": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "observed": {
+          "exact": "53/20",
+          "float": 2.65
+        },
+        "bias": {
+          "exact": "53/20",
+          "float": 2.65
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "F9",
+        "row": 5,
+        "col": 8,
+        "role": "reference",
+        "sample_id": null,
+        "expected": {
+          "exact": "3",
+          "float": 3.0
+        },
+        "observed": {
+          "exact": "123/20",
+          "float": 6.15
+        },
+        "bias": {
+          "exact": "63/20",
+          "float": 3.15
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "F10",
+        "row": 5,
+        "col": 9,
+        "role": "blank",
+        "sample_id": null,
+        "expected": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "observed": {
+          "exact": "73/20",
+          "float": 3.65
+        },
+        "bias": {
+          "exact": "73/20",
+          "float": 3.65
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "F11",
+        "row": 5,
+        "col": 10,
+        "role": "reference",
+        "sample_id": null,
+        "expected": {
+          "exact": "3",
+          "float": 3.0
+        },
+        "observed": {
+          "exact": "143/20",
+          "float": 7.15
+        },
+        "bias": {
+          "exact": "83/20",
+          "float": 4.15
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "F12",
+        "row": 5,
+        "col": 11,
+        "role": "blank",
+        "sample_id": null,
+        "expected": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "observed": {
+          "exact": "93/20",
+          "float": 4.65
+        },
+        "bias": {
+          "exact": "93/20",
+          "float": 4.65
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "G1",
+        "row": 6,
+        "col": 0,
+        "role": "blank",
+        "sample_id": null,
+        "expected": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "observed": {
+          "exact": "3/20",
+          "float": 0.15
+        },
+        "bias": {
+          "exact": "3/20",
+          "float": 0.15
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "G2",
+        "row": 6,
+        "col": 1,
+        "role": "reference",
+        "sample_id": null,
+        "expected": {
+          "exact": "7/2",
+          "float": 3.5
+        },
+        "observed": {
+          "exact": "83/20",
+          "float": 4.15
+        },
+        "bias": {
+          "exact": "13/20",
+          "float": 0.65
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "G3",
+        "row": 6,
+        "col": 2,
+        "role": "blank",
+        "sample_id": null,
+        "expected": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "observed": {
+          "exact": "23/20",
+          "float": 1.15
+        },
+        "bias": {
+          "exact": "23/20",
+          "float": 1.15
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "G4",
+        "row": 6,
+        "col": 3,
+        "role": "reference",
+        "sample_id": null,
+        "expected": {
+          "exact": "7/2",
+          "float": 3.5
+        },
+        "observed": {
+          "exact": "103/20",
+          "float": 5.15
+        },
+        "bias": {
+          "exact": "33/20",
+          "float": 1.65
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "G5",
+        "row": 6,
+        "col": 4,
+        "role": "blank",
+        "sample_id": null,
+        "expected": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "observed": {
+          "exact": "43/20",
+          "float": 2.15
+        },
+        "bias": {
+          "exact": "43/20",
+          "float": 2.15
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "G6",
+        "row": 6,
+        "col": 5,
+        "role": "reference",
+        "sample_id": null,
+        "expected": {
+          "exact": "7/2",
+          "float": 3.5
+        },
+        "observed": {
+          "exact": "123/20",
+          "float": 6.15
+        },
+        "bias": {
+          "exact": "53/20",
+          "float": 2.65
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "G7",
+        "row": 6,
+        "col": 6,
+        "role": "blank",
+        "sample_id": null,
+        "expected": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "observed": {
+          "exact": "63/20",
+          "float": 3.15
+        },
+        "bias": {
+          "exact": "63/20",
+          "float": 3.15
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "G8",
+        "row": 6,
+        "col": 7,
+        "role": "reference",
+        "sample_id": null,
+        "expected": {
+          "exact": "7/2",
+          "float": 3.5
+        },
+        "observed": {
+          "exact": "143/20",
+          "float": 7.15
+        },
+        "bias": {
+          "exact": "73/20",
+          "float": 3.65
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "G9",
+        "row": 6,
+        "col": 8,
+        "role": "blank",
+        "sample_id": null,
+        "expected": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "observed": {
+          "exact": "83/20",
+          "float": 4.15
+        },
+        "bias": {
+          "exact": "83/20",
+          "float": 4.15
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "G10",
+        "row": 6,
+        "col": 9,
+        "role": "reference",
+        "sample_id": null,
+        "expected": {
+          "exact": "7/2",
+          "float": 3.5
+        },
+        "observed": {
+          "exact": "163/20",
+          "float": 8.15
+        },
+        "bias": {
+          "exact": "93/20",
+          "float": 4.65
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "G11",
+        "row": 6,
+        "col": 10,
+        "role": "blank",
+        "sample_id": null,
+        "expected": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "observed": {
+          "exact": "103/20",
+          "float": 5.15
+        },
+        "bias": {
+          "exact": "103/20",
+          "float": 5.15
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "G12",
+        "row": 6,
+        "col": 11,
+        "role": "reference",
+        "sample_id": null,
+        "expected": {
+          "exact": "7/2",
+          "float": 3.5
+        },
+        "observed": {
+          "exact": "183/20",
+          "float": 9.15
+        },
+        "bias": {
+          "exact": "113/20",
+          "float": 5.65
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "H1",
+        "row": 7,
+        "col": 0,
+        "role": "reference",
+        "sample_id": null,
+        "expected": {
+          "exact": "4",
+          "float": 4.0
+        },
+        "observed": {
+          "exact": "103/20",
+          "float": 5.15
+        },
+        "bias": {
+          "exact": "23/20",
+          "float": 1.15
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "H2",
+        "row": 7,
+        "col": 1,
+        "role": "blank",
+        "sample_id": null,
+        "expected": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "observed": {
+          "exact": "33/20",
+          "float": 1.65
+        },
+        "bias": {
+          "exact": "33/20",
+          "float": 1.65
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "H3",
+        "row": 7,
+        "col": 2,
+        "role": "reference",
+        "sample_id": null,
+        "expected": {
+          "exact": "4",
+          "float": 4.0
+        },
+        "observed": {
+          "exact": "123/20",
+          "float": 6.15
+        },
+        "bias": {
+          "exact": "43/20",
+          "float": 2.15
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "H4",
+        "row": 7,
+        "col": 3,
+        "role": "blank",
+        "sample_id": null,
+        "expected": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "observed": {
+          "exact": "53/20",
+          "float": 2.65
+        },
+        "bias": {
+          "exact": "53/20",
+          "float": 2.65
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "H5",
+        "row": 7,
+        "col": 4,
+        "role": "reference",
+        "sample_id": null,
+        "expected": {
+          "exact": "4",
+          "float": 4.0
+        },
+        "observed": {
+          "exact": "143/20",
+          "float": 7.15
+        },
+        "bias": {
+          "exact": "63/20",
+          "float": 3.15
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "H6",
+        "row": 7,
+        "col": 5,
+        "role": "blank",
+        "sample_id": null,
+        "expected": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "observed": {
+          "exact": "73/20",
+          "float": 3.65
+        },
+        "bias": {
+          "exact": "73/20",
+          "float": 3.65
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "H7",
+        "row": 7,
+        "col": 6,
+        "role": "reference",
+        "sample_id": null,
+        "expected": {
+          "exact": "4",
+          "float": 4.0
+        },
+        "observed": {
+          "exact": "163/20",
+          "float": 8.15
+        },
+        "bias": {
+          "exact": "83/20",
+          "float": 4.15
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "H8",
+        "row": 7,
+        "col": 7,
+        "role": "blank",
+        "sample_id": null,
+        "expected": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "observed": {
+          "exact": "93/20",
+          "float": 4.65
+        },
+        "bias": {
+          "exact": "93/20",
+          "float": 4.65
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "H9",
+        "row": 7,
+        "col": 8,
+        "role": "reference",
+        "sample_id": null,
+        "expected": {
+          "exact": "4",
+          "float": 4.0
+        },
+        "observed": {
+          "exact": "183/20",
+          "float": 9.15
+        },
+        "bias": {
+          "exact": "103/20",
+          "float": 5.15
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "H10",
+        "row": 7,
+        "col": 9,
+        "role": "blank",
+        "sample_id": null,
+        "expected": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "observed": {
+          "exact": "113/20",
+          "float": 5.65
+        },
+        "bias": {
+          "exact": "113/20",
+          "float": 5.65
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "H11",
+        "row": 7,
+        "col": 10,
+        "role": "reference",
+        "sample_id": null,
+        "expected": {
+          "exact": "4",
+          "float": 4.0
+        },
+        "observed": {
+          "exact": "203/20",
+          "float": 10.15
+        },
+        "bias": {
+          "exact": "123/20",
+          "float": 6.15
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      },
+      {
+        "well": "H12",
+        "row": 7,
+        "col": 11,
+        "role": "blank",
+        "sample_id": null,
+        "expected": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "observed": {
+          "exact": "133/20",
+          "float": 6.65
+        },
+        "bias": {
+          "exact": "133/20",
+          "float": 6.65
+        },
+        "bias_identifiable": true,
+        "corrected": null,
+        "residual": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "status": "CONTROL",
+        "unidentifiability_proof": null
+      }
+    ],
+    "samples": [
+      {
+        "sample_id": "S-alpha",
+        "wells": [
+          "A1",
+          "B2"
+        ],
+        "status": "COMPLETE",
+        "corrected_values": {
+          "A1": {
+            "exact": "21/5",
+            "float": 4.2
+          },
+          "B2": {
+            "exact": "4",
+            "float": 4.0
+          }
+        },
+        "mean": {
+          "exact": "41/10",
+          "float": 4.1
+        },
+        "range": {
+          "exact": "1/5",
+          "float": 0.2
+        },
+        "reasons": []
+      },
+      {
+        "sample_id": "S-beta",
+        "wells": [
+          "C3",
+          "D4"
+        ],
+        "status": "COMPLETE",
+        "corrected_values": {
+          "C3": {
+            "exact": "9/2",
+            "float": 4.5
+          },
+          "D4": {
+            "exact": "9/2",
+            "float": 4.5
+          }
+        },
+        "mean": {
+          "exact": "9/2",
+          "float": 4.5
+        },
+        "range": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "reasons": []
+      },
+      {
+        "sample_id": "S-gamma",
+        "wells": [
+          "E5",
+          "F6"
+        ],
+        "status": "COMPLETE",
+        "corrected_values": {
+          "E5": {
+            "exact": "11/3",
+            "float": 3.6666666666666665
+          },
+          "F6": {
+            "exact": "11/3",
+            "float": 3.6666666666666665
+          }
+        },
+        "mean": {
+          "exact": "11/3",
+          "float": 3.6666666666666665
+        },
+        "range": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "reasons": []
+      }
+    ],
+    "verification": {
+      "normal_equations_zero": true,
+      "control_residuals_reproduced": true,
+      "sum_row_effects_zero": true,
+      "sum_col_effects_zero": true,
+      "nullspace_annihilates_controls": true,
+      "nullity_matches_basis": true,
+      "identifiability_claims_verified": true,
+      "sample_summaries_verified": true,
+      "numerical_rank": 19,
+      "exact_rank": 19,
+      "rank_tolerance": 9.797958971132716e-09,
+      "numerical_rank_agrees": true,
+      "ok": true
+    }
+  }
+}
